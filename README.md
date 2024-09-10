@@ -3,7 +3,7 @@
 ## Pruebas 
 
 > [!NOTE]
-> El debugger en la UI no contiene la propiedad  `content_restrictions` en el ambiente de **outboundfeeds** y
+> El debugger en la UI no contiene la propiedad  `content_restrictions` en el ambiente de 
 > **outboundfeeds-sandbox**, pero los otros ambientes sí la tienen.
 
 * Añadir exclusión en el resolver
