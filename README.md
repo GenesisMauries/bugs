@@ -3,9 +3,8 @@
 #### Pruebas 
 
 > [!NOTE]
-> El debugger en la UI no contiene la propiedad  `content_restrictions` en el ambiente de 
-> **outboundfeeds-sandbox**, pero los otros ambientes sí la tienen.
-
+> En el entorno **outboundfeeds-sandbox**, el debugger (UI) no incluye la propiedad `content_restrictions`, mientras que en los otros entornos, sí está presente.
+> 
 * Añadi exclusión en el resolver
     * [Fuente: Setting up resolvers for Outbound Feeds](https://docs.arcxp.com/alc/en/how-to-set-up-resolvers-for-outbound-feeds?sys_kb_id=3ed9b99a47aa8610a87626c2846d43fc&id=kb_article_view&spa=1)
 * Añadi en `Exclude-Terms` en la sección global de contenido las siguientes estructuras: `[{"term": {"content_elements.content_code": "muro"}}]` `[{"term": {"content_restrictions.content_code": "muro"}}]` (pruebas en el debugger de la UI)
