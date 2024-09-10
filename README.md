@@ -1,4 +1,4 @@
-### Problema: Outboundfeeds muestra notas catalogadas como premium o de pago.
+### Problema: Outboundfeeds muestra notas catalogadas como muro para sala plus
 
 #### Pruebas 
 
