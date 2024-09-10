@@ -8,7 +8,7 @@
 
 * Añadi exclusión en el resolver
     * [Fuente: Setting up resolvers for Outbound Feeds](https://docs.arcxp.com/alc/en/how-to-set-up-resolvers-for-outbound-feeds?sys_kb_id=3ed9b99a47aa8610a87626c2846d43fc&id=kb_article_view&spa=1)
-* Añadi exclusión de términos en la sección global de contenido con la siguiente estructura: `[{"term": {"content_elements.content_code": "muro"}}]` ehice pruebas en el debugger de la UI
+* Añadi en `Exclude-Terms` en la sección global de contenido la siguiente estructura: `[{"term": {"content_elements.content_code": "muro"}}]` (pruebas en el debugger de la UI)
     * [Fuente: How to Create a Custom Query with Outbound Feeds](https://docs.arcxp.com/alc/en/how-to-create-a-custom-query-with-outbound-feeds?sys_kb_id=e2202e4b47887990eee38788436d43cc&id=kb_article_view&spa=1)
 * Cree un bloque personalizado para incluir un filtro
    ![Captura de pantalla 2024-09-10 104947](https://github.com/user-attachments/assets/ae6ded60-0624-478a-8445-68c19c3484d6)
