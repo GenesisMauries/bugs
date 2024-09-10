@@ -16,6 +16,4 @@
  
 **El problema persistente: En ninguno de los casos probados funciona la exclusión de las notas de pago**
 
-Necesito guía para:
-* ¿Cómo puedo verificar si esta propiedad está presente o ausente más allá de la UI?
-* ¿Se puede añadir esta propiedad a los datos?
+
