@@ -1,6 +1,6 @@
-# Problema: Outboundfeeds muestra notas catalogadas como premium o de pago.
+### Problema: Outboundfeeds muestra notas catalogadas como premium o de pago.
 
-## Pruebas 
+#### Pruebas 
 
 > [!NOTE]
 > El debugger en la UI no contiene la propiedad  `content_restrictions` en el ambiente de 
