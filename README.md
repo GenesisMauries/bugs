@@ -13,8 +13,6 @@
 * Crear un bloque personalizado para incluir un filtro
    ![Captura de pantalla 2024-09-10 104947](https://github.com/user-attachments/assets/ae6ded60-0624-478a-8445-68c19c3484d6)
     * [Fuente: Ejecting a Block with Outbound Feeds](https://docs.arcxp.com/alc/en/ejecting-a-block-with-outbound-feeds?sys_kb_id=6233a1d6c39f0e50a046930a05013158&id=kb_article_view&sysparm_rank=3&sysparm_tsqueryId=1d1cb13947e89a90a87626c2846d4396)
-* Agregar `content_restrictions.content_code` a la peticion
-     * [Fuente: Content Sources with Outbound Feeds](https://docs.arcxp.com/alc/en/content-sources-with-outbound-feeds?sys_kb_id=cfced0e147f64a50a87626c2846d4396&id=kb_article_view&spa=1#Included-Data)
  
 **El problema persistente: En ninguno de los casos probados funciona la exclusión de las notas de pago**
 
