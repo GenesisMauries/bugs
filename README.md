@@ -16,4 +16,10 @@
  
 **El problema persistente: En ninguno de los casos probados funciona la exclusión de las notas de pago**
 
+#### Preguntas
+
+- ¿Existen otras configuraciones que debería probar para excluir correctamente el contenido?
+- ¿Hay pasos adicionales que validar en las pruebas que realice?
+- ¿Podrían proporcionar ejemplos de cómo han configurado con éxito exclusiones similares usando 'Exclude-Terms' o similares?
+
 
