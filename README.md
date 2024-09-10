@@ -1,4 +1,4 @@
-### Problema: Outboundfeeds muestra notas catalogadas como muro para sala plus
+### Problema: Outboundfeeds muestra notas catalogadas como muro (sala plus)
 
 #### Pruebas 
 
