@@ -19,7 +19,7 @@
 
 - ¿Existen otras configuraciones que debería probar para excluir correctamente el contenido?
 - ¿Hay pasos adicionales que validar en las pruebas que realice?
-- ¿Podrían proporcionar ejemplos de cómo han configurado con éxito exclusiones similares usando 'Exclude-Terms' o similares?
+- ¿Podrían proporcionar ejemplos de cómo han configurado con éxito exclusiones usando 'Exclude-Terms' o similares?
 - ¿En donde exactamente podria filtrar la data? Si es en el codigo ¿en que parte/archivo especificamente? en la UI ¿donde?
 
 
