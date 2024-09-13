@@ -21,7 +21,7 @@
     
 **El problema persistente: Solo en el ultimo caso se excluyen las notas pero en todos los sitios, el objetivo es lograr que solo pase en msn**
 
-#### Solucion
+### Solucion
 Crear un nuevo bloque basado en MSN y asignar `[{"term": {"content_restrictions.content_code": "muro"}}]` en `Exclude-Terms`
    
 #### Preguntas
