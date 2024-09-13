@@ -21,8 +21,11 @@
     
 **El problema persistente: Solo en el ultimo caso se excluyen las notas pero en todos los sitios, el objetivo es lograr que solo pase en msn**
 
-### Solucion
+### Solucion ⭐
 Crear un nuevo bloque basado en MSN y asignar `[{"term": {"content_restrictions.content_code": "muro"}}]` en `Exclude-Terms`
+
+* [Fuente: Ejecting a Block with Outbound Feeds](https://docs.arcxp.com/alc/en/ejecting-a-block-with-outbound-feeds?sys_kb_id=6233a1d6c39f0e50a046930a05013158&id=kb_article_view&sysparm_rank=3&sysparm_tsqueryId=1d1cb13947e89a90a87626c2846d4396)
+* [Fuente: How to Create a Custom Query with Outbound Feeds](https://docs.arcxp.com/alc/en/how-to-create-a-custom-query-with-outbound-feeds?sys_kb_id=e2202e4b47887990eee38788436d43cc&id=kb_article_view&spa=1)
    
 #### Preguntas
 
