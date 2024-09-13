@@ -12,9 +12,13 @@
 * Cree un bloque personalizado para incluir un filtro
    ![Captura de pantalla 2024-09-10 104947](https://github.com/user-attachments/assets/ae6ded60-0624-478a-8445-68c19c3484d6)
     * [Fuente: Ejecting a Block with Outbound Feeds](https://docs.arcxp.com/alc/en/ejecting-a-block-with-outbound-feeds?sys_kb_id=6233a1d6c39f0e50a046930a05013158&id=kb_article_view&sysparm_rank=3&sysparm_tsqueryId=1d1cb13947e89a90a87626c2846d4396)
-**El problema persistente: En ninguno de los casos probados funciona la exclusión de las notas de pago**
-
-
+   * Añadi `"feedDefaultQuery": "[{\"bool\":{\"must_not\":[{\"term\":{\"content_restrictions.content_code\":\"muro\"}}],\"must\":[{\"term\":{\"type\":\"story\"}},{\"range\":{\"display_date\":{\"gte\":\"now-2d\",\"lte\":\"now\"}}}]}}]"` en `blocks.json` y 
+    `"feedDefaultQuery": "[{\"bool\":{\"must_not\":[{\"bool\":{\"must\":[{\"term\":{\"content_restrictions.content_code\":\"muro\"}},{\"wildcard\":{\"canonical_url\":\"*outboundfeeds/news-microsoft/*\"}}]}},{\"bool\":{\"must\":[{\"term\":{\"content_restrictions.content_code\":\"muro\"}},{\"wildcard\":{\"canonical_url\":\"*outboundfeeds-sandbox/news-microsoft/*\"}}]}}],\"must\":[{\"term\":{\"type\":\"story\"}}]}}]"
+`  * [Fuente: Updating blocks.json and Outbound Feeds Development](https://arcxp.service-now.com/alc/en/updating-blocks-json-and-outbound-feeds-development?sys_kb_id=bfc85a99c34b4610a046930a05013108&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=4cec970ac3a05a10a046930a0501311b)
+      * [Fuente: Content Source Blocks in Outbound Feeds](https://arcxp.service-now.com/alc/en/content-source-blocks-in-outbound-feeds?sys_kb_id=df3733e6478cf590eee38788436d4314&id=kb_article_view&sysparm_rank=4&sysparm_tsqueryId=480bdb06c3a05a10a046930a050131db)
+    
+**El problema persistente: Solo en el ultimo caso se excluyen las notas pero en todos los sitios, el objetivo es lograr que solo pase en msn**
+   
 #### Preguntas
 
 - ¿Existen otras configuraciones que debería probar para excluir correctamente el contenido?
@@ -22,9 +26,5 @@
 - ¿Podrían proporcionar ejemplos de cómo han configurado con éxito exclusiones usando 'Exclude-Terms' o similares?
 - ¿En donde exactamente podria filtrar la data? Si es en el codigo ¿en que parte/archivo especificamente? en la UI ¿donde?
 
-### Solución
-   * Añadi `"feedDefaultQuery": "[{\"bool\":{\"must_not\":[{\"term\":{\"content_restrictions.content_code\":\"muro\"}}],\"must\":[{\"term\":{\"type\":\"story\"}},{\"range\":{\"display_date\":{\"gte\":\"now-2d\",\"lte\":\"now\"}}}]}}]"` en `blocks.json`
-      * [Fuente: Updating blocks.json and Outbound Feeds Development](https://arcxp.service-now.com/alc/en/updating-blocks-json-and-outbound-feeds-development?sys_kb_id=bfc85a99c34b4610a046930a05013108&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=4cec970ac3a05a10a046930a0501311b)
-      * [Fuente: Content Source Blocks in Outbound Feeds](https://arcxp.service-now.com/alc/en/content-source-blocks-in-outbound-feeds?sys_kb_id=df3733e6478cf590eee38788436d4314&id=kb_article_view&sysparm_rank=4&sysparm_tsqueryId=480bdb06c3a05a10a046930a050131db)
-
+  
 
